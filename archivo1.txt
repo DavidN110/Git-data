@@ -1,2 +1,84 @@
-Chachito feliz
-chacnhito felix
+$ git config --global core.autocrlf input
+configuracion del code
+[user]
+	email = dnagles@unal.edu.co
+	name = David Nagles
+[core]
+	editor = code --wait
+	autocrlf = input
+
+
+$ cd Downloads/
+abre la carpeta nombrada
+
+$ mkdir miweb
+mkdir make direcory y luego el nombre
+
+$ git init
+inicia un repositorio remoto en la carpeta donde este
+
+$ cd ..
+sale de la carpeta donde esta
+
+$ pwd
+muestra el lugar donde estas de directorio
+
+$ ls -a
+es para mostrar lo oculto
+
+$ code .
+abre el IDE escogido por el git
+
+$ git rm archivo1.txt
+rm remove para un archivo o carpeta
+
+$ git restore archivo1.txt
+restore restaura el nombre del archivo modificado por git, pre commit
+
+$ ls 
+enlista todo lo de la carpeta en la que estas
+
+$ git mv archivo.txt archivo1.txt
+mv es para cambiar el nombre del archivo, primero el nuevo luego el actual.
+
+$ git add .gitignore
+en los git ignore se añaden los archivos o carpetas que no se quieren hacer add ni commit, ".env" o "features/"
+
+$ git checkout -b ramab
+checkout cambia de rama, -b es para nueva rama y le sigue el norbre
+
+$ git diff --staged
+diff muestra todos los cambios del ultimo commit creo, el --staged es para resumir
+
+$ git branch
+muestra la rama donde estas
+
+$ git status -s
+muestra el estado de todos los archivos, -s resume las cosas a algo menor
+
+$ git add archivo2.txt
+con el add pasa del pc al staged y posterior se hace el commit, para añadir todo "add . " pero esta mal mejor por cada uno o las terminaciones "add .txt"
+
+$ git commit -m "3 chacho ar2"
+commit "commitear" pasar del staged al commit, -m para nombrar y entre " " el nombre del commit
+
+$ git log --oneline
+log muestra la linea de tiempo con todos los commits, --oneline evita la cantidad exesiva de info
+
+$ git checkout master
+checkout cambia de la rama donde estas (ramab) a la rama deseasa (master)
+
+$ git merge ramab
+con merge lo mezcla desde la rama de donde este (master) la rama a la que llamas (ramab)
+
+$ cat archivo2.txt 
+Aqui cat presenta lo contenido en el archivo
+
+$ git remote add origin https://github.com/DavidN110/Git-data.git
+desde lo remoto add a origin el link del github
+
+$ git push -u origin master
+Pusheas desde lo remoto
+-u crea una nueva rama
+origin la ubicacion donde la crea
+master nombre de la rama
